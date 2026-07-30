@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AgriSmart BF — La technologie au service de ceux qui nous nourrissent</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Karla:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="marque" href="#">
+      <svg viewBox="0 0 100 100" aria-hidden="true">
+        <path d="M9 84 L50 13 L91 84" fill="none" stroke="#0F2D15" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/>
+        <path d="M16 78 Q50 59 84 78 Q50 89 16 78 Z" fill="#0F2D15"/>
+        <rect x="48.6" y="60" width="2.8" height="17" fill="#0F2D15"/>
+        <ellipse cx="50" cy="54" rx="7.4" ry="10.4" fill="#D6A642"/>
+      </svg>
+      <b>Agri<span>Smart</span> <sup>BF</sup></b>
+    </a>
+    <nav class="liens">
+      <a href="#probleme">Le problème</a>
+      <a href="#solution">La solution</a>
+      <a href="#impact">Impact</a>
+      <a href="#equipe">L'équipe</a>
+      <a class="btn" href="#contact">Nous écrire</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<div class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-demo">
+      <span class="eyebrow">Agriculture de précision · Burkina Faso</span>
+      <h1 style="margin-top:18px">Le sol parle.<br>Nous le traduisons<br><em>en un SMS.</em></h1>
+      <p class="chapo">Des capteurs dans la parcelle, une intelligence artificielle calibrée sur le sorgho, le mil et le maïs, et un conseil clair envoyé sur le téléphone de l'agriculteur. Sans smartphone. Sans connexion internet.</p>
+      <div class="actions">
+        <a class="btn or" href="#contact">Demander une démonstration</a>
+        <a class="btn clair" href="#solution">Voir comment ça marche</a>
+      </div>
+      <p class="sous">Projet lauréat en lice · JEJA Acte 6 — « Entreprendre pour le Faso »</p>
+    </div>
+
+    <div class="chaine">
+      <div class="capteur">
+        <div class="capteur-tete"><span class="pastille"></span> Parcelle 2 · Koudougou · en direct</div>
+        <div class="releves">
+          <div class="releve bas"><div class="v" id="v-hum">18<small style="font-size:.6em">%</small></div><div class="l">Humidité sol</div></div>
+          <div class="releve"><div class="v" id="v-tmp">34<small style="font-size:.6em">°</small></div><div class="l">Température</div></div>
+          <div class="releve"><div class="v">6,4</div><div class="l">pH</div></div>
+        </div>
+      </div>
+      <div class="fleche"></div>
+      <div class="tel">
+        <div class="tel-ecran">
+          <div class="tel-barre"><span>▮▮▮▯ Orange BF</span><span>06:12</span></div>
+          <div class="sms" id="sms">
+            <b>AgriSmart · Nouveau message</b>
+            Humidité du sol à 18% sur la parcelle 2. Arrosez ce soir avant 19h. Pas de pluie prévue avant 4 jours.
+          </div>
+          <div class="tel-pied">1 message non lu</div>
+        </div>
+      </div>
+      <p class="legende">Le même conseil arrive par SMS, par appel vocal ou dans l'application.</p>
+    </div>
+  </div>
+</div>
+<div class="tisse"></div>
+
+<!-- ============ PROBLÈME ============ -->
+<section id="probleme">
+  <div class="wrap">
+    <div class="pb">
+      <div class="titre-bloc rev">
+        <span class="eyebrow sombre">Le constat</span>
+        <h2>Un secteur qui nourrit le pays, et qui avance à l'aveugle.</h2>
+        <p>L'agriculture burkinabè fait vivre la majorité du pays. Mais dans la parcelle, les décisions les plus lourdes se prennent encore sans données : quand arroser, quand traiter, quand récolter, à quel prix vendre.</p>
+        <p class="citation">« Sans données terrain fiables, les agriculteurs burkinabè produisent et vendent en dessous de leur potentiel réel. »</p>
+      </div>
+      <div class="constats rev">
+        <div class="constat">
+          <div class="n">80 %</div>
+          <div><div class="t">de la population active dépend de l'agriculture</div><span class="s">Source : 5<sup>e</sup> RGPH</span></div>
+        </div>
+        <div class="constat">
+          <div class="n or">17 %</div>
+          <div><div class="t">de pertes post-récolte chaque année, faute de suivi et de stockage adapté</div><span class="s">Source : Ministère de l'Agriculture</span></div>
+        </div>
+        <div class="constat">
+          <div class="n">20 %</div>
+          <div><div class="t">du PIB national repose sur l'agriculture</div><span class="s">Source : Ministère de l'Agriculture</span></div>
+        </div>
+        <div class="constat">
+          <div class="n">2,58 M</div>
+          <div><div class="t">d'actifs agricoles, dont une majorité d'exploitations de 1 à 10 hectares</div><span class="s">Source : RGA / RGPH</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SOLUTION ============ -->
+<section id="solution" class="sombre">
+  <div class="wrap">
+    <div class="titre-bloc rev">
+      <span class="eyebrow">La solution</span>
+      <h2>Mesurer, comprendre, conseiller. En quatre temps.</h2>
+      <p>AgriSmart BF réunit dans un seul système ce que le marché propose séparément : des capteurs au sol, une plateforme cloud et une IA qui parle la langue de l'agriculteur.</p>
+    </div>
+
+    <div class="etapes rev">
+      <div class="etape">
+        <span class="num">01</span>
+        <h3>Mesurer</h3>
+        <p>Un boîtier posé dans la parcelle relève l'humidité du sol, la température, le pH et l'azote (NPK).</p>
+      </div>
+      <div class="etape">
+        <span class="num">02</span>
+        <h3>Transmettre</h3>
+        <p>Les relevés partent vers la plateforme cloud, y compris depuis les zones à faible couverture réseau.</p>
+      </div>
+      <div class="etape">
+        <span class="num">03</span>
+        <h3>Interpréter</h3>
+        <p>L'IA croise les données avec la culture en place et le climat local, pour du sorgho, du mil ou du maïs.</p>
+      </div>
+      <div class="etape">
+        <span class="num">04</span>
+        <h3>Conseiller</h3>
+        <p>Le conseil arrive en une phrase actionnable : par SMS, par message vocal, ou dans l'application.</p>
+      </div>
+    </div>
+
+    <div class="duo rev">
+      <div class="carte-plus">
+        <span class="tag">Diagnostic par photo</span>
+        <h3>Une photo suffit à identifier la maladie</h3>
+        <p>L'agriculteur photographie une feuille depuis l'application. L'analyse visuelle détecte maladie ou stress hydrique et renvoie un traitement à appliquer, sans attendre le passage d'un technicien.</p>
+      </div>
+      <div class="carte-plus">
+        <span class="tag">Sans internet</span>
+        <h3>Un téléphone basique suffit</h3>
+        <p>Alertes et recommandations passent par SMS et USSD. Aucune application à installer, aucun forfait data, aucun smartphone requis pour recevoir le conseil essentiel.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ POSITIONNEMENT ============ -->
+<section class="tinte">
+  <div class="wrap">
+    <div class="titre-bloc rev">
+      <span class="eyebrow sombre">Positionnement</span>
+      <h2>Ce qui existe déjà, et ce qui manquait.</h2>
+      <p>Les solutions disponibles proposent l'un ou l'autre : des capteurs seuls, ou du conseil agricole seul. Rarement les deux, presque jamais adaptés au contexte burkinabè.</p>
+    </div>
+    <table class="tab rev">
+      <thead>
+        <tr><th style="text-align:left">&nbsp;</th><th>Accessible par SMS</th><th>Intelligence artificielle</th><th>Capteurs IoT</th><th>Adapté au Burkina</th></tr>
+      </thead>
+      <tbody>
+        <tr><th>Applications agricoles classiques</th><td class="non">Non</td><td class="non">Non</td><td class="non">Non</td><td class="non">Non</td></tr>
+        <tr><th>Conseil agricole traditionnel</th><td class="oui">Oui</td><td class="non">Non</td><td class="non">Non</td><td class="oui">Oui</td></tr>
+        <tr class="nous"><th>AgriSmart BF</th><td class="oui">Oui</td><td class="oui">Oui</td><td class="oui">Oui</td><td class="oui">Oui</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- ============ IMPACT ============ -->
+<section id="impact">
+  <div class="wrap">
+    <div class="titre-bloc rev">
+      <span class="eyebrow sombre">Impact visé</span>
+      <h2>Ce que nous cherchons à démontrer sur nos parcelles pilotes.</h2>
+      <p>Nos objectifs sont calés sur les références de la FAO en agriculture de précision. Ce sont des cibles à prouver sur le terrain, pas des résultats acquis.</p>
+    </div>
+    <div class="impacts rev">
+      <div class="impact">
+        <div class="v">7 à 15 %</div>
+        <div class="l">de gain de rendement visé grâce à une gestion optimisée de l'eau et des intrants</div>
+        <span class="s">Référence FAO</span>
+      </div>
+      <div class="impact">
+        <div class="v">−30 %</div>
+        <div class="l">de gaspillage de ressources visé sur l'eau et les engrais</div>
+        <span class="s">Référence FAO, agriculture de précision</span>
+      </div>
+      <div class="impact">
+        <div class="v">20</div>
+        <div class="l">exploitations pilotes équipées en 2026, via 2 à 3 coopératives partenaires</div>
+        <span class="s">Phase 1 — Centre-Ouest &amp; Hauts-Bassins</span>
+      </div>
+    </div>
+    <p class="avert">Feuille de route : 20 exploitations pilotes en 2026, 100 exploitations connectées en 2027, puis réplication du modèle coopérative dans d'autres régions à partir de 2028.</p>
+  </div>
+</section>
+
+<!-- ============ POUR QUI ============ -->
+<section class="tinte">
+  <div class="wrap">
+    <div class="titre-bloc rev">
+      <span class="eyebrow sombre">Pour qui</span>
+      <h2>Trois manières de travailler avec nous.</h2>
+    </div>
+    <div class="publics rev">
+      <div class="public">
+        <span class="eyebrow">Agriculteurs</span>
+        <h3>Vous cultivez de 1 à 10 hectares</h3>
+        <p>Vous voulez savoir quand arroser, quand traiter, et arrêter de perdre une partie de la récolte après le champ.</p>
+        <ul>
+          <li>Conseils par SMS, sans smartphone</li>
+          <li>Alertes maladie et stress hydrique</li>
+          <li>Suivi de la parcelle au quotidien</li>
+        </ul>
+        <a href="#contact">Rejoindre le programme pilote</a>
+      </div>
+      <div class="public">
+        <span class="eyebrow">Coopératives</span>
+        <h3>Vous regroupez des producteurs</h3>
+        <p>Vous cherchez à équiper vos membres et à suivre la production de l'union sur une seule interface.</p>
+        <ul>
+          <li>Déploiement groupé des kits</li>
+          <li>Formation d'un relais par village</li>
+          <li>Forfait annuel par coopérative</li>
+        </ul>
+        <a href="#contact">Demander une démonstration</a>
+      </div>
+      <div class="public">
+        <span class="eyebrow">ONG &amp; institutions</span>
+        <h3>Vous financez des programmes agricoles</h3>
+        <p>Vous voulez un dispositif mesurable, avec des indicateurs de terrain et un impact documenté.</p>
+        <ul>
+          <li>Indicateurs de suivi exportables</li>
+          <li>Déploiement par zone d'intervention</li>
+          <li>Alignement ODD 1, 2, 8, 9 et 13</li>
+        </ul>
+        <a href="#contact">Discuter d'un partenariat</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ÉQUIPE ============ -->
+<section id="equipe" class="sombre">
+  <div class="wrap">
+    <div class="titre-bloc rev">
+      <span class="eyebrow">L'équipe</span>
+      <h2>Six Burkinabè, formés au Maroc, qui construisent pour le Faso.</h2>
+      <p>Développement, électronique, cybersécurité, gestion financière : l'équipe réunit les métiers nécessaires pour porter le produit du prototype au terrain. Tous membres actifs de l'AEBM.</p>
+    </div>
+    <div class="equipe rev">
+      <div class="membre"><div class="photo" data-ini="OS"><span>Photo</span></div><h3>Ouedraogo Sayouba</h3><p class="role">Développeur full stack</p></div>
+      <div class="membre"><div class="photo" data-ini="NR"><span>Photo</span></div><h3>Nignan Abdoul Rafic</h3><p class="role">Étudiant en infrastructure digitale</p></div>
+      <div class="membre"><div class="photo" data-ini="ZC"><span>Photo</span></div><h3>Zoungrana Cédric Vladislav</h3><p class="role">Étudiant-ingénieur en automatisme et informatique industrielle</p></div>
+      <div class="membre"><div class="photo" data-ini="TJ"><span>Photo</span></div><h3>Tiendrebeogo Jennifer</h3><p class="role">Étudiante en gestion financière</p></div>
+      <div class="membre"><div class="photo" data-ini="TR"><span>Photo</span></div><h3>Tougouri Serge Régis</h3><p class="role">Développeur full stack</p></div>
+      <div class="membre"><div class="photo" data-ini="PC"><span>Photo</span></div><h3>Patrice Compaoré</h3><p class="role">Consultant IT, M2 Cybersécurité</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section id="contact">
+  <div class="wrap contact">
+    <div class="rev">
+      <div class="titre-bloc">
+        <span class="eyebrow sombre">Contact</span>
+        <h2>Parlons de votre parcelle, ou de votre programme.</h2>
+        <p>Écrivez-nous ou appelez directement. Nous répondons en français, en mooré et en dioula.</p>
+      </div>
+      <div class="coord">
+        <div><span class="k">WhatsApp</span><span class="v">+226 00 00 00 00</span></div>
+        <div><span class="k">Téléphone</span><span class="v">+226 00 00 00 00</span></div>
+        <div><span class="k">Courriel</span><span class="v">contact@agrismart.bf</span></div>
+        <div><span class="k">Zones d'intervention</span><span class="v">Centre-Ouest &amp; Hauts-Bassins</span></div>
+      </div>
+    </div>
+
+    <form class="rev" onsubmit="return false">
+      <div class="champs">
+        <div class="champ"><label for="nom">Nom et prénom</label><input id="nom" type="text" placeholder="Votre nom"></div>
+        <div class="champ"><label for="tel">Téléphone ou WhatsApp</label><input id="tel" type="tel" placeholder="+226"></div>
+        <div class="champ"><label for="profil">Vous êtes</label>
+          <select id="profil">
+            <option>Agriculteur ou agricultrice</option>
+            <option>Coopérative ou union de producteurs</option>
+            <option>ONG ou institution</option>
+            <option>Partenaire technique</option>
+            <option>Autre</option>
+          </select>
+        </div>
+        <div class="champ"><label for="region">Région</label>
+          <select id="region">
+            <option>Centre-Ouest</option><option>Hauts-Bassins</option><option>Centre</option>
+            <option>Boucle du Mouhoun</option><option>Autre région</option>
+          </select>
+        </div>
+        <div class="champ large"><label for="msg">Votre message</label><textarea id="msg" placeholder="Décrivez votre situation, votre culture, la superficie…"></textarea></div>
+      </div>
+      <button class="btn" type="submit">Envoyer le message</button>
+      <p class="aide">Vous préférez parler de vive voix ? Envoyez simplement « AGRISMART » par SMS au numéro ci-contre, nous vous rappelons.</p>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="tisse"></div>
+  <div class="wrap pied">
+    <div>
+      <div class="marque">
+        <svg viewBox="0 0 100 100" aria-hidden="true">
+          <path d="M9 84 L50 13 L91 84" fill="none" stroke="#FFFFFF" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/>
+          <path d="M16 78 Q50 59 84 78 Q50 89 16 78 Z" fill="#FFFFFF"/>
+          <rect x="48.6" y="60" width="2.8" height="17" fill="#FFFFFF"/>
+          <ellipse cx="50" cy="54" rx="7.4" ry="10.4" fill="#D6A642"/>
+        </svg>
+        <b>Agri<span>Smart</span> <sup>BF</sup></b>
+      </div>
+      <p class="slogan">La technologie au service de ceux qui nous nourrissent.</p>
+    </div>
+    <div>
+      <h4>Le projet</h4>
+      <nav>
+        <a href="#probleme">Le problème</a>
+        <a href="#solution">La solution</a>
+        <a href="#impact">Impact visé</a>
+        <a href="#equipe">L'équipe</a>
+      </nav>
+    </div>
+    <div>
+      <h4>Nous rejoindre</h4>
+      <nav>
+        <a href="#contact">Programme pilote</a>
+        <a href="#contact">Coopératives</a>
+        <a href="#contact">Partenariats ONG</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </div>
+  <div class="wrap bas">
+    <span>© 2026 AgriSmart BF · AEBM</span>
+    <span>Produire mieux · Vendre mieux · Vivre mieux</span>
+  </div>
+</footer>
+
+<script>
+  var io = new IntersectionObserver(function(es){
+    es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('vu'); io.unobserve(e.target); } });
+  },{threshold:.14});
+  document.querySelectorAll('.rev').forEach(function(el){ io.observe(el); });
+
+  // Signature : le relevé descend, le SMS arrive.
+  var sms = document.getElementById('sms');
+  if(!window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+    setTimeout(function(){ sms.classList.add('vu'); }, 1100);
+  } else { sms.classList.add('vu'); }
+</script>
+</body>
+</html>
