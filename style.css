@@ -574,6 +574,10 @@ section {
 }
 
 /* tableau positionnement */
+#positionnement .wrap{
+  overflow-x: auto;
+}
+
 .tab {
   width: 100%;
   border-collapse: collapse;
