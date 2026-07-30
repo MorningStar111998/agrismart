@@ -4,6 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>AgriSmart BF — La technologie au service de ceux qui nous nourrissent</title>
+<meta name="description" content="Capteurs, cloud et intelligence artificielle au service des agriculteurs burkinabè. Conseils agricoles par SMS, sans smartphone et sans connexion internet. Premier prix JEJA Acte 6.">
+<link rel="icon" href="images/logo-marque.webp">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Karla:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
@@ -11,16 +13,12 @@
 </head>
 <body>
 
+<a class="saut-contenu" href="#contenu">Aller au contenu</a>
+
 <header>
   <div class="wrap nav">
-    <a class="marque" href="#">
-      <svg viewBox="0 0 100 100" aria-hidden="true">
-        <path d="M9 84 L50 13 L91 84" fill="none" stroke="#0F2D15" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/>
-        <path d="M16 78 Q50 59 84 78 Q50 89 16 78 Z" fill="#0F2D15"/>
-        <rect x="48.6" y="60" width="2.8" height="17" fill="#0F2D15"/>
-        <ellipse cx="50" cy="54" rx="7.4" ry="10.4" fill="#D6A642"/>
-      </svg>
-      <b>Agri<span>Smart</span> <sup>BF</sup></b>
+    <a class="marque" href="#" aria-label="AgriSmart BF, accueil">
+      <img src="images/logo-entete.webp" alt="AgriSmart BF">
     </a>
     <nav class="liens">
       <a href="#probleme">Le problème</a>
@@ -32,30 +30,35 @@
   </div>
 </header>
 
-<!-- ============ HERO ============ -->
+<main id="contenu">
+
 <div class="hero">
   <div class="wrap hero-grid">
     <div class="hero-demo">
       <span class="eyebrow">Agriculture de précision · Burkina Faso</span>
-      <h1 style="margin-top:18px">Le sol parle.<br>Nous le traduisons<br><em>en un SMS.</em></h1>
+      <h1>Le sol parle.<br>Nous le traduisons<br><em>en un SMS.</em></h1>
       <p class="chapo">Des capteurs dans la parcelle, une intelligence artificielle calibrée sur le sorgho, le mil et le maïs, et un conseil clair envoyé sur le téléphone de l'agriculteur. Sans smartphone. Sans connexion internet.</p>
       <div class="actions">
         <a class="btn or" href="#contact">Demander une démonstration</a>
         <a class="btn clair" href="#solution">Voir comment ça marche</a>
       </div>
-      <p class="sous">Projet lauréat en lice · JEJA Acte 6 — « Entreprendre pour le Faso »</p>
+      <p class="laurier">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1.6l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 16.4l-5.8 3.1 1.1-6.5L2.6 8.4l6.5-.9z"/></svg>
+        <b>1<sup>er</sup> prix</b>
+        <span>JEJA Acte 6 — « Entreprendre pour le Faso »</span>
+      </p>
     </div>
 
     <div class="chaine">
       <div class="capteur">
         <div class="capteur-tete"><span class="pastille"></span> Parcelle 2 · Koudougou · en direct</div>
         <div class="releves">
-          <div class="releve bas"><div class="v" id="v-hum">18<small style="font-size:.6em">%</small></div><div class="l">Humidité sol</div></div>
-          <div class="releve"><div class="v" id="v-tmp">34<small style="font-size:.6em">°</small></div><div class="l">Température</div></div>
+          <div class="releve bas"><div class="v">18<small>%</small></div><div class="l">Humidité sol</div></div>
+          <div class="releve"><div class="v">34<small>°</small></div><div class="l">Température</div></div>
           <div class="releve"><div class="v">6,4</div><div class="l">pH</div></div>
         </div>
       </div>
-      <div class="fleche"></div>
+      <div class="fleche" aria-hidden="true"></div>
       <div class="tel">
         <div class="tel-ecran">
           <div class="tel-barre"><span>▮▮▮▯ Orange BF</span><span>06:12</span></div>
@@ -66,13 +69,12 @@
           <div class="tel-pied">1 message non lu</div>
         </div>
       </div>
-      <p class="legende">Le même conseil arrive par SMS, par appel vocal ou dans l'application.</p>
+      <p class="legende">Le même conseil arrive par SMS, par message vocal ou dans l'application.</p>
     </div>
   </div>
 </div>
-<div class="tisse"></div>
+<div class="tisse" aria-hidden="true"></div>
 
-<!-- ============ PROBLÈME ============ -->
 <section id="probleme">
   <div class="wrap">
     <div class="pb">
@@ -82,29 +84,34 @@
         <p>L'agriculture burkinabè fait vivre la majorité du pays. Mais dans la parcelle, les décisions les plus lourdes se prennent encore sans données : quand arroser, quand traiter, quand récolter, à quel prix vendre.</p>
         <p class="citation">« Sans données terrain fiables, les agriculteurs burkinabè produisent et vendent en dessous de leur potentiel réel. »</p>
       </div>
+
       <div class="constats rev">
         <div class="constat">
           <div class="n">80 %</div>
-          <div><div class="t">de la population active dépend de l'agriculture</div><span class="s">Source : 5<sup>e</sup> RGPH</span></div>
+          <div>
+            <div class="t">de la population active dépend de l'agriculture</div>
+            <!-- TODO : source -->
+          </div>
         </div>
         <div class="constat">
           <div class="n or">17 %</div>
-          <div><div class="t">de pertes post-récolte chaque année, faute de suivi et de stockage adapté</div><span class="s">Source : Ministère de l'Agriculture</span></div>
+          <div>
+            <div class="t">de pertes post-récolte chaque année, faute de suivi et de stockage adapté</div>
+            <!-- TODO : source -->
+          </div>
         </div>
         <div class="constat">
           <div class="n">20 %</div>
-          <div><div class="t">du PIB national repose sur l'agriculture</div><span class="s">Source : Ministère de l'Agriculture</span></div>
-        </div>
-        <div class="constat">
-          <div class="n">2,58 M</div>
-          <div><div class="t">d'actifs agricoles, dont une majorité d'exploitations de 1 à 10 hectares</div><span class="s">Source : RGA / RGPH</span></div>
+          <div>
+            <div class="t">du PIB national repose sur l'agriculture</div>
+            <span class="s">Source : Banque mondiale, 2024-2025</span>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ============ SOLUTION ============ -->
 <section id="solution" class="sombre">
   <div class="wrap">
     <div class="titre-bloc rev">
@@ -117,12 +124,12 @@
       <div class="etape">
         <span class="num">01</span>
         <h3>Mesurer</h3>
-        <p>Un boîtier posé dans la parcelle relève l'humidité du sol, la température, le pH et l'azote (NPK).</p>
+        <p>Un boîtier posé dans la parcelle relève l'humidité du sol, la température, le pH et les éléments nutritifs (NPK).</p>
       </div>
       <div class="etape">
         <span class="num">02</span>
         <h3>Transmettre</h3>
-        <p>Les relevés partent vers la plateforme cloud, y compris depuis les zones à faible couverture réseau.</p>
+        <p>Le boîtier envoie ses relevés vers la plateforme, y compris depuis les zones à faible couverture réseau.</p>
       </div>
       <div class="etape">
         <span class="num">03</span>
@@ -143,36 +150,58 @@
         <p>L'agriculteur photographie une feuille depuis l'application. L'analyse visuelle détecte maladie ou stress hydrique et renvoie un traitement à appliquer, sans attendre le passage d'un technicien.</p>
       </div>
       <div class="carte-plus">
-        <span class="tag">Sans internet</span>
+        <span class="tag">Sans internet côté agriculteur</span>
         <h3>Un téléphone basique suffit</h3>
-        <p>Alertes et recommandations passent par SMS et USSD. Aucune application à installer, aucun forfait data, aucun smartphone requis pour recevoir le conseil essentiel.</p>
+        <p>Le boîtier se connecte au réseau, pas l'agriculteur. Alertes et recommandations arrivent par SMS et USSD : aucune application à installer, aucun forfait data, aucun smartphone requis pour recevoir le conseil essentiel.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ============ POSITIONNEMENT ============ -->
 <section id="positionnement" class="tinte">
   <div class="wrap">
     <div class="titre-bloc rev">
       <span class="eyebrow sombre">Positionnement</span>
       <h2>Ce qui existe déjà, et ce qui manquait.</h2>
-      <p>Les solutions disponibles proposent l'un ou l'autre : des capteurs seuls, ou du conseil agricole seul. Rarement les deux, presque jamais adaptés au contexte burkinabè.</p>
+      <p>Les solutions disponibles couvrent rarement les deux bouts de la chaîne : soit les capteurs, soit le conseil. Et presque jamais avec un calibrage sur les cultures et le climat burkinabè.</p>
     </div>
-    <table class="tab rev">
-      <thead>
-        <tr><th style="text-align:left">&nbsp;</th><th>Accessible par SMS</th><th>Intelligence artificielle</th><th>Capteurs IoT</th><th>Adapté au Burkina</th></tr>
-      </thead>
-      <tbody>
-        <tr><th>Applications agricoles classiques</th><td class="non">Non</td><td class="non">Non</td><td class="non">Non</td><td class="non">Non</td></tr>
-        <tr><th>Conseil agricole traditionnel</th><td class="oui">Oui</td><td class="non">Non</td><td class="non">Non</td><td class="oui">Oui</td></tr>
-        <tr class="nous"><th>AgriSmart BF</th><td class="oui">Oui</td><td class="oui">Oui</td><td class="oui">Oui</td><td class="oui">Oui</td></tr>
-      </tbody>
-    </table>
+
+    <div class="tableau-defilant rev">
+      <table class="tab">
+        <caption class="sr-only">Comparaison d'AgriSmart BF avec les solutions existantes</caption>
+        <thead>
+          <tr>
+            <th scope="col" class="col-nom">Solution</th>
+            <th scope="col">Accessible par SMS</th>
+            <th scope="col">Intelligence artificielle</th>
+            <th scope="col">Capteurs IoT</th>
+            <th scope="col">Calibré Burkina</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Applications agricoles génériques</th>
+            <td class="non">Non</td><td class="oui">Oui</td><td class="non">Non</td><td class="non">Non</td>
+          </tr>
+          <tr>
+            <th scope="row">Conseil agricole de terrain</th>
+            <td class="non">Non</td><td class="non">Non</td><td class="non">Non</td><td class="oui">Oui</td>
+          </tr>
+          <tr>
+            <th scope="row">Boîtiers de capteurs seuls</th>
+            <td class="non">Non</td><td class="non">Non</td><td class="oui">Oui</td><td class="non">Non</td>
+          </tr>
+          <tr class="nous">
+            <th scope="row">AgriSmart BF</th>
+            <td class="oui">Oui</td><td class="oui">Oui</td><td class="oui">Oui</td><td class="oui">Oui</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="indice-defilement">Faites défiler le tableau horizontalement →</p>
   </div>
 </section>
 
-<!-- ============ IMPACT ============ -->
 <section id="impact">
   <div class="wrap">
     <div class="titre-bloc rev">
@@ -180,6 +209,7 @@
       <h2>Ce que nous cherchons à démontrer sur nos parcelles pilotes.</h2>
       <p>Nos objectifs sont calés sur les références de la FAO en agriculture de précision. Ce sont des cibles à prouver sur le terrain, pas des résultats acquis.</p>
     </div>
+
     <div class="impacts rev">
       <div class="impact">
         <div class="v">7 à 15 %</div>
@@ -193,16 +223,53 @@
       </div>
       <div class="impact">
         <div class="v">20</div>
-        <div class="l">exploitations pilotes équipées en 2026, via 2 à 3 coopératives partenaires</div>
-        <span class="s">Phase 1 — Centre-Ouest &amp; Hauts-Bassins</span>
+        <div class="l">exploitations pilotes équipées en Phase 1, via 2 à 3 coopératives partenaires</div>
+        <span class="s">Centre-Ouest &amp; Hauts-Bassins</span>
       </div>
     </div>
-    <p class="avert">Feuille de route : 20 exploitations pilotes en 2026, 100 exploitations connectées en 2027, puis réplication du modèle coopérative dans d'autres régions à partir de 2028.</p>
+
+    <div class="phases rev">
+      <h3 class="sous-titre">Notre montée en charge</h3>
+      <ol class="phase-liste">
+        <li>
+          <span class="phase-num">Phase 1</span>
+          <span class="phase-titre">Pilote</span>
+          <p>20 exploitations pilotes équipées, MVP capteurs et application, premiers partenariats avec les ONG locales.</p>
+        </li>
+        <li>
+          <span class="phase-num">Phase 2</span>
+          <span class="phase-titre">Croissance</span>
+          <p>100 exploitations connectées, diagnostic par photo intégré, extension à de nouvelles coopératives.</p>
+        </li>
+        <li>
+          <span class="phase-num">Phase 3</span>
+          <span class="phase-titre">Expansion</span>
+          <p>Plus de 1000 agriculteurs connectés, réplication du modèle coopérative dans d'autres régions, extension à l'espace UEMOA.</p>
+        </li>
+      </ol>
+    </div>
+
+    <div class="repartition rev">
+      <h3 class="sous-titre">Où va l'investissement</h3>
+      <div class="barre" role="img" aria-label="Répartition de l'investissement : recherche et développement matériel 35 %, application et cloud 25 %, déploiement 20 %, formation et sensibilisation 10 %, fonctionnement et imprévus 10 %">
+        <span class="s1" style="width:35%"></span>
+        <span class="s2" style="width:25%"></span>
+        <span class="s3" style="width:20%"></span>
+        <span class="s4" style="width:10%"></span>
+        <span class="s5" style="width:10%"></span>
+      </div>
+      <ul class="barre-legende">
+        <li><i class="s1"></i><b>35 %</b> R&amp;D matériel</li>
+        <li><i class="s2"></i><b>25 %</b> Application &amp; cloud</li>
+        <li><i class="s3"></i><b>20 %</b> Déploiement</li>
+        <li><i class="s4"></i><b>10 %</b> Formation &amp; sensibilisation</li>
+        <li><i class="s5"></i><b>10 %</b> Fonctionnement &amp; imprévus</li>
+      </ul>
+    </div>
   </div>
 </section>
 
-<!-- ============ POUR QUI ============ -->
-<section class="tinte">
+<section id="pour-qui" class="tinte">
   <div class="wrap">
     <div class="titre-bloc rev">
       <span class="eyebrow sombre">Pour qui</span>
@@ -246,7 +313,6 @@
   </div>
 </section>
 
-<!-- ============ ÉQUIPE ============ -->
 <section id="equipe" class="sombre">
   <div class="wrap">
     <div class="titre-bloc rev">
@@ -254,18 +320,44 @@
       <h2>Six Burkinabè, formés au Maroc, qui construisent pour le Faso.</h2>
       <p>Développement, électronique, cybersécurité, gestion financière : l'équipe réunit les métiers nécessaires pour porter le produit du prototype au terrain. Tous membres actifs de l'AEBM.</p>
     </div>
+
+    <figure class="prix rev">
+      <img src="images/team agrismart.webp" alt="L'équipe AgriSmart BF recevant le premier prix du concours JEJA Acte 6">
+      <figcaption>
+        <b>Premier prix</b>
+        <span>JEJA Acte 6 — « Entreprendre pour le Faso »</span>
+      </figcaption>
+    </figure>
+
     <div class="equipe rev">
-      <div class="membre"><div class="photo" data-ini="OS"><span>Photo</span></div><h3>Ouedraogo Sayouba</h3><p class="role">Développeur full stack</p></div>
-      <div class="membre"><div class="photo" data-ini="NR"><span>Photo</span></div><h3>Nignan Abdoul Rafic</h3><p class="role">Étudiant en infrastructure digitale</p></div>
-      <div class="membre"><div class="photo" data-ini="ZC"><span>Photo</span></div><h3>Zoungrana Cédric Vladislav</h3><p class="role">Étudiant-ingénieur en automatisme et informatique industrielle</p></div>
-      <div class="membre"><div class="photo" data-ini="TJ"><span>Photo</span></div><h3>Tiendrebeogo Jennifer</h3><p class="role">Étudiante en gestion financière</p></div>
-      <div class="membre"><div class="photo" data-ini="TR"><span>Photo</span></div><h3>Tougouri Serge Régis</h3><p class="role">Développeur full stack</p></div>
-      <div class="membre"><div class="photo" data-ini="PC"><span>Photo</span></div><h3>Patrice Compaoré</h3><p class="role">Consultant IT, M2 Cybersécurité</p></div>
+      <div class="membre">
+        <img class="photo" src="images/sayouba.webp" alt="Ouedraogo Sayouba" loading="lazy">
+        <h3>Ouedraogo Sayouba</h3><p class="role">Développeur full stack</p>
+      </div>
+      <div class="membre">
+        <img class="photo" src="images/rafic.webp" alt="Nignan Abdoul Rafic" loading="lazy">
+        <h3>Nignan Abdoul Rafic</h3><p class="role">Étudiant en infrastructure digitale</p>
+      </div>
+      <div class="membre">
+        <img class="photo" src="images/waza.webp" alt="Zoungrana Cédric Vladislav" loading="lazy">
+        <h3>Zoungrana Cédric Vladislav</h3><p class="role">Ingénieur d'État en automatisme et informatique industrielle</p>
+      </div>
+      <div class="membre">
+        <img class="photo" src="images/jennifer.webp" alt="Tiendrebeogo Jennifer" loading="lazy">
+        <h3>Tiendrebeogo Jennifer</h3><p class="role">Étudiante en gestion financière</p>
+      </div>
+      <div class="membre">
+        <img class="photo" src="images/regis.webp" alt="Tougouri Serge Régis" loading="lazy">
+        <h3>Tougouri Serge Régis</h3><p class="role">Développeur full stack</p>
+      </div>
+      <div class="membre">
+        <img class="photo" src="images/patrice.webp" alt="Compaoré Patrice" loading="lazy">
+        <h3>Compaoré Patrice</h3><p class="role"> Ingénieur Systèmes et Réseaux - Support N2</p>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- ============ CONTACT ============ -->
 <section id="contact">
   <div class="wrap contact">
     <div class="rev">
@@ -282,12 +374,12 @@
       </div>
     </div>
 
-    <form class="rev" onsubmit="return false">
+    <form class="rev" novalidate>
       <div class="champs">
-        <div class="champ"><label for="nom">Nom et prénom</label><input id="nom" type="text" placeholder="Votre nom"></div>
-        <div class="champ"><label for="tel">Téléphone ou WhatsApp</label><input id="tel" type="tel" placeholder="+226"></div>
+        <div class="champ"><label for="nom">Nom et prénom</label><input id="nom" name="nom" type="text" autocomplete="name" placeholder="Votre nom"></div>
+        <div class="champ"><label for="tel">Téléphone ou WhatsApp</label><input id="tel" name="tel" type="tel" autocomplete="tel" placeholder="+226"></div>
         <div class="champ"><label for="profil">Vous êtes</label>
-          <select id="profil">
+          <select id="profil" name="profil">
             <option>Agriculteur ou agricultrice</option>
             <option>Coopérative ou union de producteurs</option>
             <option>ONG ou institution</option>
@@ -296,12 +388,12 @@
           </select>
         </div>
         <div class="champ"><label for="region">Région</label>
-          <select id="region">
+          <select id="region" name="region">
             <option>Centre-Ouest</option><option>Hauts-Bassins</option><option>Centre</option>
             <option>Boucle du Mouhoun</option><option>Autre région</option>
           </select>
         </div>
-        <div class="champ large"><label for="msg">Votre message</label><textarea id="msg" placeholder="Décrivez votre situation, votre culture, la superficie…"></textarea></div>
+        <div class="champ large"><label for="msg">Votre message</label><textarea id="msg" name="message" placeholder="Décrivez votre situation, votre culture, la superficie…"></textarea></div>
       </div>
       <button class="btn" type="submit">Envoyer le message</button>
       <p class="aide">Vous préférez parler de vive voix ? Envoyez simplement « AGRISMART » par SMS au numéro ci-contre, nous vous rappelons.</p>
@@ -309,19 +401,13 @@
   </div>
 </section>
 
+</main>
+
 <footer>
-  <div class="tisse"></div>
+  <div class="tisse" aria-hidden="true"></div>
   <div class="wrap pied">
-    <div>
-      <div class="marque">
-        <svg viewBox="0 0 100 100" aria-hidden="true">
-          <path d="M9 84 L50 13 L91 84" fill="none" stroke="#FFFFFF" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/>
-          <path d="M16 78 Q50 59 84 78 Q50 89 16 78 Z" fill="#FFFFFF"/>
-          <rect x="48.6" y="60" width="2.8" height="17" fill="#FFFFFF"/>
-          <ellipse cx="50" cy="54" rx="7.4" ry="10.4" fill="#D6A642"/>
-        </svg>
-        <b>Agri<span>Smart</span> <sup>BF</sup></b>
-      </div>
+    <div class="pied-marque">
+      <img src="images/logo-blanc.webp" alt="AgriSmart BF">
       <p class="slogan">La technologie au service de ceux qui nous nourrissent.</p>
     </div>
     <div>
@@ -349,17 +435,6 @@
   </div>
 </footer>
 
-<script>
-  var io = new IntersectionObserver(function(es){
-    es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('vu'); io.unobserve(e.target); } });
-  },{threshold:.14});
-  document.querySelectorAll('.rev').forEach(function(el){ io.observe(el); });
-
-  // Signature : le relevé descend, le SMS arrive.
-  var sms = document.getElementById('sms');
-  if(!window.matchMedia('(prefers-reduced-motion: reduce)').matches){
-    setTimeout(function(){ sms.classList.add('vu'); }, 1100);
-  } else { sms.classList.add('vu'); }
-</script>
+<script src="script.js"></script>
 </body>
 </html>
